@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<title>Minimax spele</title>
+	
+</head>
+<body class ="main $green-200">
+	<div class="root">
+		<div class="playerChose">
+			<div class="whyAreYou">Dators pirmais (Jus MIN)</div>
+			<label class="switch">
+  			<input type="checkbox">
+  			<span class="slider round"></span>
+		</label>
+		<div class="whyAreYou">Speletajs pirmais (Jus MAX)</div>
+		</div>
+		
+		<div class="valueOutput">
+			<div class="val" id="value1"></div> 
+			<div class="val" id="value2"></div>
+			<div class="val" id="value3"></div>
+			<div class="val" id="value4"></div>
+			<div class="val" id="value5"></div>
+		</div>
+		<div class="inputBtn">
+			<button class="btn btn-success" onclick="combination12()">1 un 2</button>
+			<button class="btn btn-success" onclick="combination23()">2 un 3</button>
+			<button class="btn btn-success" onclick="combination34()">3 un 4</button>
+			<button class="btn btn-success" onclick="combination45()">4 un 5</button>
+		</div>
+		<div class="score">
+			<div class="scoreValue" id="scoreNumYour"></div>
+			<div class="message">
+			<div class="messageBox" id="messageOutput"></div>
+			</div>
+			<div class="scoreValue" id="scoreNumEnemy"></div>
+		</div>
+		<div class="score">
+			<div class="scoreName">Jūsu punkti</div>
+			<div class="scoreName">Datoru punkti</div>
+		</div>
+	</div>
+	<div class="d-grid gap-2 col-8 mx-auto">
+		<button class="btn btn-primary" id="starting" onclick="start()">START</button>	
+	</div>
+	<div class="d-grid gap-2 col-8 mx-auto">
+		<button class="btn rest btn-secondary" onclick="restart()">Restart</button>	
+	</div>
+	<div class="about">
+		<div class="rools">
+			<div class="roolPointz">Uzvar tas, kuram ir vairāk punktu</div>
+			<div class="roolPoint">Noņemot    11    šajā vietā ir izveidots   1 jūs zaudējat -1</div>
+			<div class="roolPoint">Noņemot    10    šajā vietā ir izveidots   1 jūs zaudējat -2</div>
+			<div class="roolPoint">Noņemot    01    šajā vietā ir izveidots   0 jūs zaudējat -2</div>
+			<div class="roolPoint">Noņemot    00    šajā vietā ir izveidots   0 jūs zaudējat -1</div>
+		</div>
+		<div class="author">
+			<div class="photo"><img class="photoins" src="img/rtu_logo_en.jpg" alt=""></div>
+			<div class="textinautor">
+				<div class="id">Apliecības Numurs	191DDB018</div>
+				<div class="name">Kurss 2 Grupa 1</div>
+				<div class="programma">Kardels Maksims</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>
